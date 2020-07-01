@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="carriers" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="canpar" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Canpar Settings</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Debug Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="email" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email</label>
+                </field>
+                <field id="password" translate="label" type="password" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+                <field id="shippingaccount" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Shipping Account Number</label>
+                </field>
+                <field id="sandbox_mode" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sandbox Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="sandbox_endpoint" translate="label" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sandbox API URL</label>
+                </field>
+                <field id="endpoint" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API URL</label>
+                </field>
+                <field id="addon_endpoint" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Addon API URL</label>
+                </field>
+                <field id="business_endpoint" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Business API URL</label>
+                </field>
+                <field id="association_disc" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Apply Association Discount</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="individual_disc" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Apply Individual Discount</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="invoice_disc" translate="label" type="select" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Apply Invoice Discount</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="failover_ratetitle" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Fail Over Rate Title</label>
+                </field>
+                <field id="failover_rate" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Fail Over Rate Cost</label>
+                </field>
+                <field id="default_weight" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default weight</label>
+                </field>
+                <field id="default_weight_unit" translate="label comment" type="select" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Default Weight Unit</label>
+                    <source_model>CollinsHarper\Canpar\Model\Source\WeightUnits</source_model>
+                </field>
+                <field id="max_box_weight" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Box Weight</label>
+                </field>
+                <field id="default_dimensional_unit" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Default Dimensional Unit</label>
+                    <source_model>CollinsHarper\Canpar\Model\Source\DimUnits</source_model>
+                </field>
+                <field id="cos" translate="label" type="select" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Chain Of Signature</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="dg" translate="label" type="select" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dangerous Goods</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="instruction" translate="label" type="textarea" sortOrder="23" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Specific instructions to be included on each order</label>
+                </field>
+                <field id="alt_instruction" translate="label" type="select" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use Address Line 2</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="allowed_methods" translate="label comment" type="multiselect" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="0" >
+                    <label>Allowed Shipping Services</label>
+                    <source_model>CollinsHarper\Canpar\Model\Source\Method</source_model>
+                </field>
+                <field id="handling_type" translate="label comment" type="select" sortOrder="26" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Handling Fee Type</label>
+                    <source_model>CollinsHarper\Canpar\Model\Source\Handling</source_model>
+                </field>
+                <field id="handling" translate="label" type="text" sortOrder="27" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Handling Fee</label>
+                </field>
+                <field id="pickup_is_residential" translate="label" type="select" sortOrder="28" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pickup Address Is Residential</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="lead_time_days" translate="label" type="text" sortOrder="29" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Lead time for order processing</label>
+                    <comment>Adds a lead time (in days) to all Expected Delivery Dates to account for order processing</comment>
+                </field>
+                <field id="length" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Package Length</label>
+                </field>
+                <field id="width" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Package Width</label>
+                </field>
+                <field id="height" translate="label" type="text" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Package Height</label>
+                </field>
+                <field id="sallowspecific" translate="label" type="select" sortOrder="33" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Ship to Applicable Countries</label>
+                    <frontend_class>shipping-applicable-country</frontend_class>
+                    <source_model>Magento\Shipping\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Ship to Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

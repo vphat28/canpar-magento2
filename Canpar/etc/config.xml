@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <canpar>
+                <active>1</active>
+                <allowed_methods>1,2,3,4,5,C,D,E,F,G,H,I</allowed_methods>
+                <model>CollinsHarper\Canpar\Model\Carrier\ShippingMethod</model>
+                <title>Canpar Shipping</title>
+                <name>Canpar</name>
+                <addon_endpoint>https://canpar.com/canshipws/services/CanparAddonsService</addon_endpoint>
+                <business_endpoint>https://canpar.com/canshipws/services/CanshipBusinessService</business_endpoint>
+                <enpoint>https://canpar.com/canshipws/services/CanparRatingService</enpoint>
+                <sandbox_enpoint>https://sandbox.canpar.com/canshipws/services/CanparRatingService</sandbox_enpoint>
+                <sandbox_mode>1</sandbox_mode>
+                <handling_type>fixed</handling_type>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <width>10</width>
+                <length>10</length>
+                <height>10</height>
+                <instruction></instruction>
+                <estimated_deliver_date_margin>1</estimated_deliver_date_margin>
+                <dg>0</dg>
+                <default_weight_unit>LB</default_weight_unit>
+                <failover_ratetitle>Canpar Standard Rate</failover_ratetitle>
+                <failover_rate>0</failover_rate>
+                <default_weight>0</default_weight>
+                <default_weight_unit>LB</default_weight_unit>
+                <nsr>0</nsr>
+                <xc>0</xc>
+                <default_dimentional_unit>IN</default_dimentional_unit>
+            </canpar>
+        </carriers>
+    </default>
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="CollinsHarper\Canpar\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="CollinsHarper\Canpar\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">canparLog</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">CollinsHarper\Canpar\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Quote\Model\ShippingMethodManagement">
+        <plugin disabled="false" name="CollinsHarper_Canpar_Plugin_ShippingMethodManagement" sortOrder="1" type="CollinsHarper\Canpar\Plugin\ShippingMethodManagement"/>
+    </type>
+</config>
