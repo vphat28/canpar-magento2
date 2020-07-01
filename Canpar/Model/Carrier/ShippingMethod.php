@@ -126,6 +126,20 @@ class ShippingMethod extends AbstractCarrierOnline implements CarrierInterface
             $data
         );
     }
+
+    /**
+     * Processing additional validation to check is carrier applicable.
+     *
+     * @param \Magento\Framework\DataObject $request
+     * @return $this|bool|\Magento\Framework\DataObject
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     * @since 100.2.6
+     */
+    public function processAdditionalValidation(\Magento\Framework\DataObject $request)
+    {
+        return $this;
+    }
+
     /**
      * Collect and get rates
      *
