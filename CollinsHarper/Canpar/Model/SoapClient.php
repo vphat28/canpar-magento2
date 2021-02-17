@@ -5,7 +5,7 @@ use Magento\Framework\Model\AbstractModel;
 
 class SoapClient extends AbstractModel
 {
-    
+    const API_URL = 'https://canship.canpar.com/canshipws/services/CanparRatingService';
     /**
      * Core store config
      *
@@ -28,12 +28,7 @@ class SoapClient extends AbstractModel
         $return = [];
         switch ($type) {
             case 'rating':
-                $sandboxMode = $this->scopeConfig->getValue('carriers/canpar/sandbox_mode');
-                if ($sandboxMode) {
-                    $url = $this->scopeConfig->getValue('carriers/canpar/sandbox_endpoint');
-                } else {
-                    $url = $this->scopeConfig->getValue('carriers/canpar/endpoint');
-                }
+                $url = self::API_URL;
                 $return = [
                     'wsdl' => $url.'?wsdl',
                     'endpoint' => $url

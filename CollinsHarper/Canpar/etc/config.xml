@@ -10,7 +10,6 @@
                 <name>Canpar</name>
                 <addon_endpoint>https://canship.canpar.com/canshipws/services/CanparAddonsService</addon_endpoint>
                 <business_endpoint>https://canship.canpar.com/canshipws/services/CanshipBusinessService</business_endpoint>
-                <endpoint>https://canship.canpar.com/canshipws/services/CanparRatingService</endpoint>
                 <sandbox_enpoint>https://sandbox.canpar.com/canshipws/services/CanparRatingService</sandbox_enpoint>
                 <sandbox_mode>1</sandbox_mode>
                 <handling_type>fixed</handling_type>
