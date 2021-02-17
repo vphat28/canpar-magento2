@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"  showInStore="1">
+			<group id="measure_units" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1"  showInStore="1">
+				
+				<label>Measure Units</label>						
+				<field id="weight" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Weight</label>
+					<source_model>CollinsHarper\MeasureUnit\Model\System\Weight</source_model>
+				</field>
+				<field id="length" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1"  showInStore="1">
+					<label>Length, Width, Height</label>
+					<source_model>CollinsHarper\MeasureUnit\Model\System\Length</source_model>
+				</field>
+				<field id="default_length" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Default Length (inches)</label>
+					<comment>If a product does not have this dimension, this value will be used.</comment>
+				</field>
+				<field id="default_width" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1"  showInStore="1">
+					<label>Default Width (inches)</label>
+					<comment>If a product does not have this dimension, this value will be used.</comment>
+				</field>
+				<field id="default_height" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Default height (inches)</label>
+					<comment>If a product does not have this dimension, this value will be used.</comment>
+				</field>				
+			</group>
+			<group id="product_data" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"  showInStore="1">
+				
+				<label>Product Attribute Dimensions Setup</label>						
+				<field id="product_length" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Product Length Attribute</label>
+					<source_model>CollinsHarper\MeasureUnit\Model\System\ProductAttributes</source_model>
+					<comment><![CDATA[Note: Please select the attribute to use as the length of the product.]]></comment>
+				</field>
+				<field id="product_width" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1"  showInStore="1">
+					<label>Product Width Attribute</label>
+					<source_model>CollinsHarper\MeasureUnit\Model\System\ProductAttributes</source_model>
+					<comment><![CDATA[Note: Please select the product attribute to use as the width of the product.]]></comment>
+				</field>
+				<field id="product_height" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Product Height Attribute</label>
+					<source_model>CollinsHarper\MeasureUnit\Model\System\ProductAttributes</source_model>
+					<comment><![CDATA[Note: Please select the attribute to use as the height of the product.]]></comment>
+				</field>				
+			</group>
+        </section>
+    </system>
+</config>

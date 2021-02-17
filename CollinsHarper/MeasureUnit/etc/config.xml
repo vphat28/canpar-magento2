@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <catalog>
+            <measure_units>
+                <weight>kg</weight>
+                <length>m</length>
+                <default_length>10</default_length>
+                <default_width>10</default_width>
+                <default_height>10</default_height>
+            </measure_units>
+            <product_data>
+                <product_length>length</product_length>
+                <product_width>width</product_width>
+                <product_height>height</product_height>
+            </product_data>
+        </catalog>
+    </default>
+</config>

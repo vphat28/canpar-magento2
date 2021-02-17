@@ -1,0 +1,12 @@
+<?php
+    $trackData = $block->getTrackData();
+?>
+<?php
+if ($trackData->result->delivered) {
+    echo $block->escapeHtml(__('Delivered'));
+} else {
+    echo $block->escapeHtml(__('Undelivered'));
+}
+echo ' ';
+echo $trackData->result->tracking_url_fr;
+?>

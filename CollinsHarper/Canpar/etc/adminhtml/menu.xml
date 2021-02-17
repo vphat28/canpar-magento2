@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+	   <add id="CollinsHarper_Canpar::manifest" title="Canpar Manifest" module="CollinsHarper_Canpar" sortOrder="35" action="canpar/manifest" resource="CollinsHarper_Canpar::manifest" parent="Magento_Sales::sales_operation"/>
+    </menu>
+</config>
